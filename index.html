@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Kanit&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!--App body start-->
+  <div class="app-body">
+      <!--App header-->
+      <div class="app-header">
+        <input type="text" placeholder="Enter your task here..." id="task-text"/>
+        <div class="add-button-container"><button class="add-btn" id="add-btn" data-title="Dodaj!"><span class="fa fa-plus" aria-hidden="true"></span></button></div>
+      </div>
+      <div class="tasks">
+            <div id="welcome">
+            <h1>Welcome!</h1>
+            <p>
+              This simple app will help you with managing your daily task.
+              <br>
+              Feel free to use it.
+            </p>
+            </div>
+        <!--List of your tasks-->
+        <ul id="list">
+        </ul>
+      <hr>
+      <h1 class="important-tasks" id="h1imp">Important tasks <span class="fa fa-exclamation fa-small" aria-hidden="true"></h1>
+        <!--List of your IMPORTANT tasks-->
+        <ul id="importantList">
+        </ul>
+      </div>
+  </div>
+  <!--App body end-->
+  <script src="scripts/scripts.js"></script>
+  <!--Copyrights by Maciej Niedzielski 2017-->
+</body>
+</html>
