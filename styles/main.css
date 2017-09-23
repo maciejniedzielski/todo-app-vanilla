@@ -5,9 +5,6 @@ body{
   align-items: flex-start;
   font-family: 'Kanit', sans-serif;
   font-size: 14px;
-  background-image: url("../img/work.jpg");
-  background-size:cover;
-  background-attachment: fixed;
 }
 ::selection{
   background: #ffffff;
@@ -237,5 +234,8 @@ color:#3c164d;
 @media (min-width: 480px) {
   body {
       font-size: 16px;
+      background-image: url("../img/work.jpg");
+      background-size:cover;
+      background-attachment: fixed;
   }
 }
