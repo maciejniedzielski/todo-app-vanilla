@@ -4,7 +4,7 @@ body{
   justify-content: center;
   align-items: flex-start;
   font-family: 'Kanit', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   background-image: url("../img/work.jpg");
   background-size:cover;
   background-attachment: fixed;
@@ -34,12 +34,13 @@ body{
 }
 button{
   cursor: pointer;
-  width:40px;
-  height:40px;
+  width:35px;
+  height:35px;
   border-radius:3px;
   border:0px;
   color:white;
   margin-left:5px;
+  padding: 0;
 }
 input{
   box-sizing:border-box;
@@ -50,7 +51,7 @@ input{
   color:white;
   padding:10px;
   height:70px;
-  font-size:1.5rem;
+  font-size:1.3rem;
   box-shadow:0px 0px 5px #525252;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -127,7 +128,7 @@ ul{
   border-radius:3px;
   box-sizing: border-box;
   color:#582171;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   align-items: center;
   align-content: center;
   box-shadow: 0px 1px 5px #a2a2a2;
@@ -137,35 +138,12 @@ ul{
   background: #8b3eaf;
   color:white;
 }
-button.remove-btn{
-  border-radius:5px;
-  border:2px solid #e1e1e1;
+.done-btn, .pin-btn, .remove-btn {
+  /*border-radius:5px;
+  border:2px solid #e1e1e1;*/
+  box-sizing: border-box;
   color:white;
-  background:#8b3eaf;
-  transition: 0.2s;
-}
-button.remove-btn:hover{
-    border:2px solid #ffffff;
-  background:white;
-  color:#8b3eaf;
-}
-button.pin-btn{
-  border-radius:5px;
-  border:2px solid #e1e1e1;
-  color:white;
-  background:#8b3eaf;
-  transition: 0.2s;
-}
-button.pin-btn:hover{
-    border:2px solid #ffffff;
-  background:white;
-  color:#8b3eaf;
-}
-.done-btn{
-  border-radius:5px;
-  border:2px solid #e1e1e1;
-  color:white;
-  background:#8b3eaf;
+  background: transparent;
   transition: 0.2s;
 }
 button.done-btn:hover{
@@ -173,11 +151,21 @@ button.done-btn:hover{
   background:white;
   color:#8b3eaf;
 }
+button.remove-btn:hover{
+    border:2px solid #ffffff;
+  background:white;
+  color:#8b3eaf;
+}
+button.pin-btn:hover{
+  border:2px solid #ffffff;
+  background:white;
+  color:#8b3eaf;
+}
 input:focus{
   outline-color:white;
 }
 h1.important-tasks{
-  font-size:2em;
+  font-size:1.6em;
   color:#3c164d;
   text-align: center;
   position: relative;
@@ -244,4 +232,10 @@ color:#3c164d;
 }
 .btns-cont{
   display: none;
+}
+
+@media (min-width: 480px) {
+  body {
+      font-size: 16px;
+  }
 }
